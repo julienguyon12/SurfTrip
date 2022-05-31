@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.ul2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.75);
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+.li2 {
+    float: left;
+}
+.li2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.li2-1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2px 2px;
+    text-decoration: none;
+    font-family: "Brush Script MT",
+        "cursive";
+    font-size: 30px;
+}
+.li2 a:hover {
+    background-color: #111;
+
+}
+.container-budget {
+    /* bloc principal */
+    font-family: "Futura",
+        sans-serif;
+    width: 100%;
+    display: grid;
+    grid-template-areas:"entete entete"
+                        "principal1 principal3"
+                        "principal2 principal4";
+}    
+.titre-budget {
+    font-family: "Bodoni MT", "sans-serif";
+    grid-area: entete;
+}
+.section-budget {
+    grid-area: principal1;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+.section-depense {
+    grid-area: principal2;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+.section-bilan {
+    grid-area: principal3;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+.container-bilan {
+    /* bloc principal */
+    font-family: "Futura",
+        sans-serif;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "principal1 principal2 principal3";      
+}
+.section-bilan-budget {
+    grid-area: principal1;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+.section-bilan-depense {
+    grid-area: principal2;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+
+.section-bilan-balance {
+    grid-area: principal3;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+.section-depense-liste {
+    grid-area: principal4;
+    place-self: center;
+    padding: 15px;
+    border: solid 10px aliceblue;
+}
+.list1{
+    column-count: 4;
+    column-width: 50px;
+}
+.container-depense-liste{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.depense{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+}
+.itemlist{
+    width: 150px;
+}
+.btnmodifier{
+    width:50px
+}
+.btnsupprimer {
+    width: 50px
+}
+.alert-section-budget,.alert-section-depense{
+    display: none;
+}
+.showItem{
+    display: block;
+}
+.showGreen{
+    color: green;
+}
+.showRed {
+    color: red;
+}
+.showblack{
+    color: black;
+}
