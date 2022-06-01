@@ -1,39 +1,129 @@
 const valiseDetail = [
   {
     id: 1,
-    pEquipement: `lorem wedhu wedhjd fj`,
-    pconseil: `lorem wedhFu wedhjd fsdaFVwesfj`,
-    img: '../img/valise/equipementsurf.JPG',
+    title: `Mes vêtements`,
+    item1: `2 shorts`,
+    item2: `1 jean`,
+    item3: `3 t-shirts`,
+    item4: `2 pulls`,
+    item5: `1 veste de pluie `,
+    item6: `3 paires de chaussettes`,
+    item7: `5 caleçons `,
+    item8: `1 serviette microfibre`,
+    item9: ``,
+    item10: ``,
+    item11: ``,
+    item12: ``,
+    item13: ``,
+    item14: ``,
+    item15: ``,
+    pconseil: `Le plus important en faisant son sac c'est de ne pas trop se charger. Si le sac est trop lourd les déplacements seront pénibles et vous serez déjà assez chargé avec l'équipement surf. Si il vous manque quelque chose vous pourrez toujours acheter sur place et ramener des souvenirs. `,
+    img: '../img/valise/vetement.JPG',
   },
   {
     id: 2,
-    pEquipement: `lorem wedhu wedhjd fj`,
-    pconseil: `lorem wedhFu wedhjd fsdaFVwesfj`,
-    img: '../img/valise/equipementsurf.JPG',
+    title: `Mon sac`,
+    item1: `Sac Forclaz 70L + 1 sac 20L`,
+    item2: `1 sac à dos de ville`,
+    item3: `Saccoche de protection d'ordinateur `,
+    item4: ``,
+    item5: ``,
+    item6: ``,
+    item7: ``,
+    item8: ``,
+    item9: ``,
+    item10: ``,
+    item11: ``,
+    item12: ``,
+    item13: ``,
+    item14: ``,
+    item15: ``,
+    pconseil: `Il est important d'avoir un bon sac avec beaucoup de rangements. En effet la plupart du temps dans les dortoirs vous ne pourrez pas vous éparpiller. Il est donc important d'avoir un sac pratique. J'ai choisi un grand sac de 70L afin de pouvoir faire mon sac rapidement sans toujours rouler mes vêtements et pour ramener des souvenirs. `,
+    img: '../img/valise/sac.JPG',
   },
   {
     id: 3,
-    tpEquipement: `lorem wedhu wedhjd fj`,
-    pconseil: `lorem wedhFu wedhjd fsdaFVwesfj`,
-    img: '../img/valise/equipementsurf.JPG',
+    title: `Mes accessoires électronique`,
+    item1: `Ordinateur`,
+    item2: `Enceinte portative`,
+    item3: `Ecouteurs`,
+    item4: `Telephone`,
+    item5: `Adaptateur internationale`,
+    item6: `Clef usb`,
+    item7: ``,
+    item8: ``,
+    item9: ``,
+    item10: ``,
+    item11: ``,
+    item12: ``,
+    item13: ``,
+    item14: ``,
+    item15: ``,
+    pconseil: `Selon vos hobbies l'équipement électronique peut peser lourd. Il est donc important de bien l'anticiper. L'ordinateur est loin d'etre indispensable il est plutot encombrant et peu securisant. Je suis partie sans et l'ai acheté pendant mon voyage quand j'ai décidé de me reconvertir dans le developpement web. De manière générale l'électronique est moins cher à l'étranger j'ai ainsi également acheté mon enceinte et mes écouteurs sur place.`,
+    img: '../img/valise/electronique.JPG',
   },
   {
     id: 4,
-    pEquipement: `lorem wedhu wedhjd fj`,
-    pconseil: `lorem wedhFu wedhjd fsdaFVwesfj`,
-    img: '../img/valise/equipementsurf.JPG',
+    title: `Mes chaussures`,
+    item1: `1 paire de randos`,
+    item2: `1 paire de baskets`,
+    item3: `1 pair de tongs`,
+    item4: ``,
+    item5: ``,
+    item6: ``,
+    item7: ``,
+    item8: ``,
+    item9: ``,
+    item10: ``,
+    item11: ``,
+    item12: ``,
+    item13: ``,
+    item14: ``,
+    item15: ``,
+    pconseil: `Pensez à prendre de bonnes chaussures de marche. Les bonnes chaussures sont difficiles à trouver surtout que dans de nombreux pays le 43 est considéré comme une grande taille.`,
+    img: '../img/valise/chaussure.JPG',
   },
   {
     id: 5,
-    pEquipement: `lorem wedhu wedhjd fj`,
-    pconseil: `lorem wedhFu wedhjd fsdaFVwesfj`,
+    title: `Mon équipement`,
+    item1: `Planche de surf`,
+    item2: `Board bag`,
+    item3: `Wax`,
+    item4: `Stick solaire`,
+    item5: `Résine Solarez `,
+    item6: `Papier pons`,
+    item7: `Fibre de verre`,
+    item8: `Squeegee`,
+    item9: `Leash`,
+    item10: `Derrives`,
+    item11: `Pochette type surf system`,
+    item12: ``,
+    item13: ``,
+    item14: ``,
+    item15: ``,
+    pconseil: `Ne pas oublier de prendre un bon stick solaire, en effet il est souvent difficile d'en trouver dans des endroits reculés. Egalement le kit de réparations est fortement recommandé sachant qu'il est presque impossible de trouver de la résine en dehors des grandes villes. Pour la planche de surf j'ai choisi l'option d'acheter sur place afin d'éviter de payer des frais de compagnie aerienne ainsi que la casse.`,
     img: '../img/valise/equipementsurf.JPG',
   },
   {
     id: 6,
-    pEquipement: `lorem wedhu wedhjd fj`,
-    pconseil: `lorem wedhFu wedhjd fsdaFVwesfj`,
-    img: '../img/valise/equipementsurf.JPG',
+    title: `Pharmacie`,
+    item1: `Saccoche`,
+    item2: `Hammac compacte`,
+    item3: `Sac à viande`,
+    item4: `Cadenas à code`,
+    item5: `Couteau suisse`,
+    item6: `Frontale`,
+    item7: `Livre`,
+    item8: `Anti moustique`,
+    item9: ``,
+    item10: ``,
+    item11: ``,
+    item12: ``,
+    item13: ``,
+    item14: ``,
+    item15: ``,
+    pconseil: `Les cadenas à codes sont tres pratiques. La plupart des auberges de jeunesses ont des lockers mais pas de cadenas. Egalement les petites saccoches discrètes sont indispensables pour garder sur soi passport et une partie de son argent en particulier dans les transports. Le couteau suisse, trés utile pour ouvrir les bouteilles de vins.`,
+    img: '../img/valise/chaussure.JPG',
   },
 ];
 var i = 0; //compteur pour recuperation id
@@ -114,8 +204,24 @@ function creerValiseInterieurDetail() {
                     <div class="boite-valise" id="boite-valise">
                       <img src="${valiseDetail[i].img}" alt="" class="image-valise-detail">
                       <div class="container-equipement">
-                          <h5 class="titre-valise-detail">Mon équipement</h5>
-                          <p class="p-valise-detail">${valiseDetail[i].pEquipement}</p>
+                          <h5 class="titre-valise-detail">${valiseDetail[i].title}</h5>
+                          <div class="container-liste-equipement">
+                            <div>${valiseDetail[i].item1}</div>
+                            <div>${valiseDetail[i].item2}</div>
+                            <div>${valiseDetail[i].item3}</div>
+                            <div>${valiseDetail[i].item4}</div>
+                            <div>${valiseDetail[i].item5}</div>
+                            <div>${valiseDetail[i].item6}</div>
+                            <div>${valiseDetail[i].item7}</div>
+                            <div>${valiseDetail[i].item8}</div>
+                            <div>${valiseDetail[i].item9}</div>
+                            <div>${valiseDetail[i].item10}</div>
+                            <div>${valiseDetail[i].item11}</div>
+                            <div>${valiseDetail[i].item12}</div>
+                            <div>${valiseDetail[i].item13}</div>
+                            <div>${valiseDetail[i].item14}</div>
+                            <div>${valiseDetail[i].item15}</div>
+                          </div>
                       </div>
                       <div class="container-conseil">
                           <h5 class="titre-valise-detail">Mon conseil</h5>
@@ -129,8 +235,24 @@ function creerValiseInterieurDetail() {
     sectionBoite.innerHTML = `
                     <img src="${valiseDetail[i].img}" alt="" class="image-valise-detail">
                     <div class="container-equipement">
-                        <h5 class="titre-valise-detail">Mon équipement</h5>
-                        <p class="p-valise-detail">${valiseDetail[i].pEquipement}</p>
+                        <h5 class="titre-valise-detail">${valiseDetail[i].title}</h5>
+                          <div class="container-liste-equipement">
+                            <div>${valiseDetail[i].item1}</div>
+                            <div>${valiseDetail[i].item2}</div>
+                            <div>${valiseDetail[i].item3}</div>
+                            <div>${valiseDetail[i].item4}</div>
+                            <div>${valiseDetail[i].item5}</div>
+                            <div>${valiseDetail[i].item6}</div>
+                            <div>${valiseDetail[i].item7}</div>
+                            <div>${valiseDetail[i].item8}</div>
+                            <div>${valiseDetail[i].item9}</div>
+                            <div>${valiseDetail[i].item10}</div>
+                            <div>${valiseDetail[i].item11}</div>
+                            <div>${valiseDetail[i].item12}</div>
+                            <div>${valiseDetail[i].item13}</div>
+                            <div>${valiseDetail[i].item14}</div>
+                            <div>${valiseDetail[i].item15}</div>
+                          </div>
                     </div>
                     <div class="container-conseil">
                         <h5 class="titre-valise-detail">Mon conseil</h5>
@@ -206,6 +328,46 @@ function eventListeners() {
     sac.addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
         i = 1;
+        creerValiseInterieurDetail();
+      }
+    });
+    electronique.addEventListener('click', function () {
+      i = 2;
+      creerValiseInterieurDetail();
+    });
+    electronique.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        i = 2;
+        creerValiseInterieurDetail();
+      }
+    });
+    chaussures.addEventListener('click', function () {
+      i = 3;
+      creerValiseInterieurDetail();
+    });
+    chaussures.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        i = 3;
+        creerValiseInterieurDetail();
+      }
+    });
+    equipement.addEventListener('click', function () {
+      i = 4;
+      creerValiseInterieurDetail();
+    });
+    equipement.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        i = 4;
+        creerValiseInterieurDetail();
+      }
+    });
+    accessoires.addEventListener('click', function () {
+      i = 5;
+      creerValiseInterieurDetail();
+    });
+    accessoires.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        i = 5;
         creerValiseInterieurDetail();
       }
     });
