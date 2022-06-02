@@ -1,5 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /* css variables */
 :root {
@@ -10,7 +11,7 @@
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainbeige: rgb(255, 170, 60, 0.3);
-  --darkbeige: rgb(255, 170, 60, 0.8);
+  --darkbeige: rgb(222, 174, 115);
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.25rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
@@ -44,27 +45,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Indie Flower', cursive;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 4.3rem;
 }
 
 h2 {
   font-size: 2.3rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+h3 span {
+  color: var(--darkbeige);
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
-
+h5 {
+  font-size: 1.3rem;
+}
+h5 span {
+  color: var(--darkbeige);
+  font-size: 130%;
+}
 p {
   margin-bottom: 1.25rem;
   line-height: 2;
@@ -153,6 +164,7 @@ a {
   background-color: rgb(0, 0, 0, 0.75);
   position: fixed;
   z-index: 2;
+  font-family: 'Indie Flower', cursive;
   min-width: 900px;
   width: 100%;
 }
@@ -281,7 +293,6 @@ a {
 .container-image-ouvrir-valise {
   position: relative;
   color: rgb(255, 255, 255);
-  font-family: 'Futura', sans-serif;
   width: 20vw;
   height: fit-content;
 }
@@ -375,19 +386,24 @@ a {
   grid-template-areas:
     'img equipement'
     'img conseil';
-  min-width: 100%;
+  width: fit-content;
   margin-top: auto;
   margin-bottom: auto;
   align-items: center;
+  background-color: var(--mainbeige);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
 }
 .image-valise-detail {
   grid-area: img;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  border: solid 5px var(--mainbeige);
+  /* border: solid 5px var(--mainbeige); */
   padding: 0px;
-  box-shadow: 5px 5px 10px var(--darkGrey);
+  /* box-shadow: 5px 5px 10px var(--darkGrey); */
   margin-bottom: 10px;
 }
 .container-equipement {

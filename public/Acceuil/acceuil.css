@@ -1,0 +1,208 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap');
+
+/* css variables */
+:root {
+  --primaryColor: #3fd0d4;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainbeige: rgb(255, 170, 60, 0.3);
+  --darkbeige: rgb(255, 170, 60, 0.8);
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.25rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* body */
+body {
+  background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background: url('../img/Acceuil/morillo.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*************** global styles ***************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Abril fatface, sans-serif;
+  margin-bottom: 2rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 7.5rem;
+  color: #f1f1f1;
+  font-family: Abril fatface, sans-serif;
+}
+
+h2 {
+  font-size: 3.7rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* more global styles */
+
+/* buttons */
+
+/* section */
+
+/* title */
+
+/*************** end of global styles ***************/
+/*************** navbar ***************/
+
+/*************** fin navbar ***************/
+/*************** titre***************/
+.container-first {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+h1 span {
+  position: relative;
+}
+/*************** fin titre ***************/
+
+/*************** Bouton ***************/
+.container-btns {
+  position: relative;
+  top: 50px;
+}
+.btn-first {
+  border: 2px solid #f1f1f1;
+  outline: none;
+  background: transparent;
+  font-size: 3rem;
+  padding: 20px;
+  width: 300px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.btn-first:nth-child(1) {
+  margin-right: 30px;
+}
+.btn-first:hover {
+  transition: all 0.8s ease-in-out;
+  background: #f1f1f1;
+  color: #333;
+}
+/*************** fin de bouton***************/
+/*************** Lignes ***************/
+.lignes {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+.l1 {
+  width: 250px;
+  height: 3px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.l2 {
+  width: 140px;
+  height: 3px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+}
+
+/*************** end of Lignes ***************/
+/*************** logo ***************/
+.logo {
+  position: absolute;
+  right: 2.9%;
+  top: 4%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.menu {
+  list-style-type: none;
+  position: absolute;
+  right: 3.3%;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bulle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  background: transparent;
+  cursor: pointer;
+}
+.bulle:hover {
+  transition: all 0.8s ease-in-out;
+  background: #f1f1f1;
+  color: #333;
+}
+
+/*************** end of logo ***************/
+/*************** featured tours section ***************/
+
+/*************** end of featured tours section ***************/
+/*************** gallery ***************/
+
+/*************** end of gallery ***************/
+/*************** deals ***************/
+
+/*************** end of deals ***************/
+/*************** footer ***************/
+/************ navbar *****************/
+
+/* CSS */

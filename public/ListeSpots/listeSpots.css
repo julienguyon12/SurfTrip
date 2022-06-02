@@ -1,0 +1,319 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* css variables */
+:root {
+  --primaryColor: #3fd0d4;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainbeige: rgb(255, 170, 60, 0.3);
+  --darkbeige: rgb(222, 174, 115);
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.05rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* body */
+body {
+  font-family: 'Futura', sans-serif;
+  color: var(--mainBlack);
+  background: var(--offWhite);
+  line-height: 1.4;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+/*************** global styles ***************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 3.7rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* more global styles */
+
+/* buttons */
+
+/* section */
+
+/* title */
+
+/*************** end of global styles ***************/
+/*************** navbar ***************/
+.ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.75);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  font-family: 'Indie Flower', cursive;
+  width: 100%;
+  height: 8vh;
+  min-width: 850px;
+}
+.li2 {
+  float: left;
+}
+.li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.li2-1 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2px 2px;
+  text-decoration: none;
+  font-family: 'Brush Script MT', 'cursive';
+  font-size: 30px;
+}
+.li2 a:hover {
+  background-color: #111;
+}
+/*************** fin navbar ***************/
+/*************** Structure site ***************/
+
+/*************** fin Structure site ***************/
+
+/*************** carousel ***************/
+.carousel {
+  perspective: 1200px;
+  height: 92vh;
+  background: var(--mainbeige);
+  font-size: 0;
+  overflow: hidden;
+}
+.spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+.spinner img {
+  width: 30%;
+  max-width: 425px;
+  max-height: 300px;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+}
+@media (max-width: 900px) {
+  .spinner img,
+  .spinner {
+    transform-origin: 50% 50% -300px;
+  }
+}
+.hovered {
+  font-size: 0;
+  background: transparent;
+}
+.hovered:hover {
+  transition: all 0.8s ease-in-out;
+  background: url(../PagesSpots/playacolorado/parchemin.jpg);
+  background-size: cover;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 0px 0px 90px 10px #646464;
+  cursor: pointer;
+}
+.spinner img:nth-child(1) {
+  transform: rotateY(0deg);
+}
+.spinner img:nth-child(2) {
+  transform: rotateY(-60deg);
+}
+.spinner img:nth-child(3) {
+  transform: rotateY(-120deg);
+}
+.spinner img:nth-child(4) {
+  transform: rotateY(-180deg);
+}
+.spinner img:nth-child(5) {
+  transform: rotateY(-240deg);
+}
+.spinner img:nth-child(6) {
+  transform: rotateY(-300deg);
+}
+.cacher {
+  visibility: hidden;
+}
+.icon-retour,
+.icon-droite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  background-color: var(--mainbeige);
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-retour {
+  left: 5px;
+}
+.icon-droite {
+  right: 5px;
+}
+.icon-retour,
+.icon-droite:hover {
+  cursor: pointer;
+}
+.arrow,
+.arrow-droite {
+  border-top: solid 3px var(--mainBlack);
+  border-left: solid 3px var(--mainBlack);
+  width: 15px;
+  height: 15px;
+}
+.arrow {
+  transform: rotate(-45deg);
+}
+.arrow-droite {
+  transform: rotate(135deg);
+}
+@media (max-width: 768px) {
+  .icon-retour {
+    height: 30px;
+    width: 30px;
+  }
+  .arrow {
+    width: 10px;
+    height: 10px;
+  }
+}
+/*************** fin de carousel***************/
+/*************** Selection spot section ***************/
+.card-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../PagesSpots/playacolorado/parchemin.jpg);
+  width: 80%;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-carte {
+  width: 40%;
+}
+.container-spot {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+.card-item {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  /* background: url(../img/pangadrop/IMG_1724.PNG); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Futura', sans-serif;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px rgb(212, 212, 212);
+  border-radius: 5%;
+  height: 15rem;
+  /* width: auto; */
+}
+.img-item {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgb(212, 212, 212);
+  border-radius: 5%;
+}
+.texte_centrer {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--darkbeige);
+}
+.zoom .card-item {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.zoom .card-item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/*************** end of Selection spot section ***************/
+/*************** services section ***************/
+
+/*************** end of services section ***************/
+/*************** featured tours section ***************/
+
+/*************** end of featured tours section ***************/
+/*************** gallery ***************/
+
+/*************** end of gallery ***************/
+/*************** deals ***************/
+
+/*************** end of deals ***************/
+/*************** footer ***************/
+/************ navbar *****************/
+
+/* CSS */

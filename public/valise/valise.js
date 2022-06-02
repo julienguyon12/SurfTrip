@@ -143,27 +143,27 @@ function creerValiseInterieur() {
                     <div class="container-valise-image zoom" >
                         
                         <div id="vetement" class="contenu-valise">
-                            <h5 class="valise-title">Mes vetements</h5>
+                            <h5 class="valise-title"><span>M</span>es <span>v</span>êtements</h5>
                             <img src="../img/valise/vetement.JPG" alt="" class="valise-image">
                         </div>
                         <div id="sac" class="contenu-valise">
-                            <h5 class="valise-title">Mon sac</h5>
+                            <h5 class="valise-title"><span>M</span>on <span>s</span>ac</h5>
                             <img src="../img/valise/sac.JPG" alt="" class="valise-image">
                         </div>
                         <div id="electronique" class="contenu-valise">
-                            <h5 class="valise-title">Mon materiel electronique</h5>
+                            <h5 class="valise-title"><span>M</span>on <span>m</span>atériel <span>e</span>lectronique</h5>
                             <img src="../img/valise/electronique.JPG" alt="" class="valise-image">
                         </div>
                         <div id="chaussures" class="contenu-valise">
-                            <h5 class="valise-title">Mes chaussures</h5>
+                            <h5 class="valise-title"><span>M</span>es <span>c</span>haussures</h5>
                             <img src="../img/valise/chaussure.JPG" alt="" class="valise-image">
                         </div>
                         <div id="equipement" class="contenu-valise">
-                            <h5 class="valise-title">Mon equipement surf</h5>
+                            <h5 class="valise-title"><span>M</span>on <span>é</span>quipement <span>s</span>urf</h5>
                             <img src="../img/valise/equipementsurf.JPG" alt="" class="valise-image">
                         </div>
                         <div id="accessoires" class="contenu-valise">
-                            <h5 class="valise-title">Mes accessoires</h5>
+                            <h5 class="valise-title"><span>M</span>es <span>a</span>ccessoires</h5>
                             <img src="../img/valise/accessoire.JPG" alt="" class="valise-image">
                         </div>
                     </div>
