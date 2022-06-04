@@ -346,6 +346,7 @@ p {
   margin-bottom: 15px;
   margin-right: 10px;
 }
+/* galerie */
 .galerie {
   margin: 15px;
   grid-area: principal5;
@@ -389,6 +390,7 @@ p {
   place-self: center;
   text-align: center;
 }
+/* fin de galerie */
 .asidegauche {
   width: 200px;
   grid-area: lateral1;

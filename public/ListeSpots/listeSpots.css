@@ -258,7 +258,7 @@ a {
 }
 .container-spot {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 2rem;
   padding: 2rem;
 }
@@ -270,10 +270,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Futura', sans-serif;
-  margin-top: 15px;
+  margin-top: 30px;
   box-shadow: 5px 5px 10px rgb(212, 212, 212);
-  border-radius: 5%;
-  height: 15rem;
+  border-radius: 10px;
+  height: 25rem;
   /* width: auto; */
 }
 .img-item {
@@ -282,12 +282,18 @@ a {
   box-shadow: 5px 5px 10px rgb(212, 212, 212);
   border-radius: 5%;
 }
+.bloc_lien {
+  display: block;
+  height: 100%;
+  /* width: auto (par défaut) */
+}
 .texte_centrer {
   position: absolute;
   top: -10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--darkbeige);
+  font-family: 'Indie Flower', cursive;
 }
 .zoom .card-item {
   -webkit-transform: scale(1);

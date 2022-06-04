@@ -2,39 +2,39 @@ const listePays = [
   {
     id: 0,
     title: `Nicaragua`,
-    cartespot: '../img/valise/vetement.JPG',
+    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
   },
   {
     id: 1,
     title: `Panama`,
-    cartespot: '../img/valise/equipement.JPG',
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
   },
   {
     id: 2,
     title: `Costa rica`,
-    cartespot: '../img/valise/vetement.JPG',
+    cartespot: '../img/cartes/costarica/cartespotcosta.png',
   },
   {
     id: 3,
     title: `Equateur`,
-    cartespot: '../img/valise/equipement.JPG',
+    cartespot: '../img/cartes/equateur/cartespotequateur.png',
   },
   {
     id: 4,
     title: `Pérou`,
-    cartespot: '../img/valise/vetement.JPG',
+    cartespot: '../img/cartes/perou/cartespotperou.png',
   },
   {
     id: 5,
     title: `Indonésie`,
-    cartespot: '../img/valise/vetement.JPG',
+    cartespot: '../img/cartes/indo/cartespotindo.png',
   },
 ];
 const spot = [
   {
     id: 0,
     title: `Panga drops`,
-    cartespot: '../img/valise/vetement.JPG',
+    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
     pays: `Nicaragua`,
     imgitem: `../img/pangadrop/IMG_1724.PNG`,
     class: `pangadrop`,
@@ -42,7 +42,7 @@ const spot = [
   {
     id: 1,
     title: `Popoyo`,
-    cartespot: '../img/valise/equipement.JPG',
+    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
     pays: `Nicaragua`,
     imgitem: `../img/popoyo/couv.jpg`,
     class: `popoyo`,
@@ -50,7 +50,7 @@ const spot = [
   {
     id: 2,
     title: `Penon`,
-    cartespot: '../img/valise/vetement.JPG',
+    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
     pays: `Nicaragua`,
     imgitem: `../img/penon/IMG_1536.JPG`,
     class: `penon`,
@@ -58,7 +58,7 @@ const spot = [
   {
     id: 3,
     title: `Maderas`,
-    cartespot: '../img/valise/equipement.JPG',
+    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
     pays: `Nicaragua`,
     imgitem: `../img/maderas/couv1.jpg`,
     class: `maderas`,
@@ -66,10 +66,59 @@ const spot = [
   {
     id: 4,
     title: `Colorado`,
-    cartespot: '../img/valise/equipement.JPG',
+    lien: '../PagesSpots/playacolorado/index.html',
+    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
     pays: `Nicaragua`,
     imgitem: `../img/imgcolorado/IMG_1850.png`,
     class: `colorado`,
+  },
+  {
+    id: 5,
+    title: `411`,
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
+    pays: `Panama`,
+    imgitem: `../img/411/vignette.JPG`,
+    class: `quatre`,
+  },
+  {
+    id: 6,
+    title: `Corto Circuito`,
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
+    pays: `Panama`,
+    imgitem: `../img/cortocircuito/vignette.jpg`,
+    class: `corto`,
+  },
+  {
+    id: 7,
+    title: `Dinosor`,
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
+    pays: `Panama`,
+    imgitem: `../img/dinosor/vignette.png`,
+    class: `dinosor`,
+  },
+  {
+    id: 8,
+    title: `Morillo`,
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
+    pays: `Panama`,
+    imgitem: `../img/morillo/vignette.jpg`,
+    class: `morillo`,
+  },
+  {
+    id: 9,
+    title: `Playa Venao`,
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
+    pays: `Panama`,
+    imgitem: `../img/playavenao/vignette.jpg`,
+    class: `venao`,
+  },
+  {
+    id: 10,
+    title: `Santa Catalina`,
+    cartespot: '../img/cartes/panama/cartespotpanama.png',
+    pays: `Panama`,
+    imgitem: `../img/santacatalina/vignette.jpg`,
+    class: `santa`,
   },
 ];
 const spinner = document.getElementById('spinner');
@@ -229,6 +278,7 @@ function creationItem(spotItems) {
   const containerSpot = document.getElementById('containerSpot');
   let listeItems = spotItems.map(function (item) {
     return `<div class="card-item ${item.class}" id="item1">
+        <a class="bloc_lien" href="${item.lien}"></a>
         <div class="texte_centrer">${item.title}</div>
       </div>
       <style>
@@ -242,9 +292,7 @@ function creationItem(spotItems) {
 
   listeItems = listeItems.join('');
   containerSpot.innerHTML = listeItems;
-  console.log(listeItems);
 }
-
 function eventListeners() {
   btnDroit.addEventListener('click', function () {
     ajouterAngle();
