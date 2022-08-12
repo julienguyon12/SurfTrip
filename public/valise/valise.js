@@ -123,7 +123,7 @@ const valiseDetail = [
     item14: ``,
     item15: ``,
     pconseil: `Les cadenas à codes sont tres pratiques. La plupart des auberges de jeunesses ont des lockers mais pas de cadenas. Egalement les petites saccoches discrètes sont indispensables pour garder sur soi passport et une partie de son argent en particulier dans les transports. Le couteau suisse, trés utile pour ouvrir les bouteilles de vins.`,
-    img: '../img/valise/chaussure.JPG',
+    img: '../img/valise/accessoire.JPG',
   },
 ];
 var i = 0; //compteur pour recuperation id

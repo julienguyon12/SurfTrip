@@ -20,5 +20,11 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "spellright.documentTypes": ["markdown", "latex", "plaintext", "javascript"]
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "javascript",
+    "html"
+  ]
 }

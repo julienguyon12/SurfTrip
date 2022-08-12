@@ -11,7 +11,7 @@
   --darkGrey: #afafaf;
   --mainbeige: rgb(255, 170, 60, 0.3);
   --darkbeige: rgb(222, 174, 115);
-  --mainTransition: all 0.3s linear;
+  --mainTransition: all 0.5s linear;
   --mainSpacing: 0.05rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
@@ -153,13 +153,8 @@ a {
   left: 35%;
   top: 20%;
   transform-origin: 50% 50% -500px;
+  transition: transform-origin 0.5s linear;
   outline: 1px solid transparent;
-}
-@media (max-width: 900px) {
-  .spinner img,
-  .spinner {
-    transform-origin: 50% 50% -300px;
-  }
 }
 .hovered {
   font-size: 0;
@@ -207,6 +202,7 @@ a {
   border-radius: 40px;
   justify-content: center;
   align-items: center;
+  transition: var(--mainTransition);
 }
 .icon-retour {
   left: 5px;
@@ -224,22 +220,13 @@ a {
   border-left: solid 3px var(--mainBlack);
   width: 15px;
   height: 15px;
+  transition: var(--mainTransition);
 }
 .arrow {
   transform: rotate(-45deg);
 }
 .arrow-droite {
   transform: rotate(135deg);
-}
-@media (max-width: 768px) {
-  .icon-retour {
-    height: 30px;
-    width: 30px;
-  }
-  .arrow {
-    width: 10px;
-    height: 10px;
-  }
 }
 /*************** fin de carousel***************/
 /*************** Selection spot section ***************/
@@ -255,6 +242,7 @@ a {
 }
 .img-carte {
   width: 40%;
+  transition: all 0.5s linear;
 }
 .container-spot {
   display: grid;
@@ -266,7 +254,6 @@ a {
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
-  /* background: url(../img/pangadrop/IMG_1724.PNG); */
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Futura', sans-serif;
@@ -274,7 +261,6 @@ a {
   box-shadow: 5px 5px 10px rgb(212, 212, 212);
   border-radius: 10px;
   height: 25rem;
-  /* width: auto; */
 }
 .img-item {
   width: 100%;
@@ -321,5 +307,42 @@ a {
 /*************** end of deals ***************/
 /*************** footer ***************/
 /************ navbar *****************/
+@media (max-width: 900px) {
+  .spinner img,
+  .spinner {
+    transform-origin: 50% 50% -300px;
+  }
+  .img-carte {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .spinner img,
+  .spinner {
+    transform-origin: 50% 50% -200px;
+  }
+  .spinner img {
+    top: 30%;
+  }
+  html {
+    font-size: 50%;
+  }
+  .container-spot {
+    grid-template-columns: auto auto;
+  }
+  .icon-retour,
+  .icon-droite {
+    height: 30px;
+    width: 30px;
+  }
+  .arrow,
+  .arrow-droite {
+    width: 10px;
+    height: 10px;
+  }
+  .img-carte {
+    width: 100%;
+  }
+}
 
 /* CSS */

@@ -1,126 +1,3 @@
-const listePays = [
-  {
-    id: 0,
-    title: `Nicaragua`,
-    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
-  },
-  {
-    id: 1,
-    title: `Panama`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-  },
-  {
-    id: 2,
-    title: `Costa rica`,
-    cartespot: '../img/cartes/costarica/cartespotcosta.png',
-  },
-  {
-    id: 3,
-    title: `Equateur`,
-    cartespot: '../img/cartes/equateur/cartespotequateur.png',
-  },
-  {
-    id: 4,
-    title: `Pérou`,
-    cartespot: '../img/cartes/perou/cartespotperou.png',
-  },
-  {
-    id: 5,
-    title: `Indonésie`,
-    cartespot: '../img/cartes/indo/cartespotindo.png',
-  },
-];
-const spot = [
-  {
-    id: 0,
-    title: `Panga drops`,
-    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
-    pays: `Nicaragua`,
-    imgitem: `../img/pangadrop/IMG_1724.PNG`,
-    class: `pangadrop`,
-  },
-  {
-    id: 1,
-    title: `Popoyo`,
-    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
-    pays: `Nicaragua`,
-    imgitem: `../img/popoyo/couv.jpg`,
-    class: `popoyo`,
-  },
-  {
-    id: 2,
-    title: `Penon`,
-    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
-    pays: `Nicaragua`,
-    imgitem: `../img/penon/IMG_1536.JPG`,
-    class: `penon`,
-  },
-  {
-    id: 3,
-    title: `Maderas`,
-    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
-    pays: `Nicaragua`,
-    imgitem: `../img/maderas/couv1.jpg`,
-    class: `maderas`,
-  },
-  {
-    id: 4,
-    title: `Colorado`,
-    lien: '../PagesSpots/playacolorado/index.html',
-    cartespot: '../img/cartes/nicaragua/cartespotnicaragua.png',
-    pays: `Nicaragua`,
-    imgitem: `../img/imgcolorado/IMG_1850.png`,
-    class: `colorado`,
-  },
-  {
-    id: 5,
-    title: `411`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-    pays: `Panama`,
-    imgitem: `../img/411/vignette.JPG`,
-    class: `quatre`,
-  },
-  {
-    id: 6,
-    title: `Corto Circuito`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-    pays: `Panama`,
-    imgitem: `../img/cortocircuito/vignette.jpg`,
-    class: `corto`,
-  },
-  {
-    id: 7,
-    title: `Dinosor`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-    pays: `Panama`,
-    imgitem: `../img/dinosor/vignette.png`,
-    class: `dinosor`,
-  },
-  {
-    id: 8,
-    title: `Morillo`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-    pays: `Panama`,
-    imgitem: `../img/morillo/vignette.jpg`,
-    class: `morillo`,
-  },
-  {
-    id: 9,
-    title: `Playa Venao`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-    pays: `Panama`,
-    imgitem: `../img/playavenao/vignette.jpg`,
-    class: `venao`,
-  },
-  {
-    id: 10,
-    title: `Santa Catalina`,
-    cartespot: '../img/cartes/panama/cartespotpanama.png',
-    pays: `Panama`,
-    imgitem: `../img/santacatalina/vignette.jpg`,
-    class: `santa`,
-  },
-];
 const spinner = document.getElementById('spinner');
 const titreSpans = document.querySelectorAll('h1 span');
 const nicaragua = document.getElementById('nicaragua');
@@ -256,7 +133,7 @@ function selectPays() {
 }
 //creer la page du pays ou seront insere les items spots par la suite
 function afficherspot() {
-  sectionSpot.innerHTML = `<h2>Mes Spots</h2>
+  sectionSpot.innerHTML = `<h2 id="spotView">Mes Spots</h2>
     <div class="card-map"><img src="${listePays[i].cartespot}" alt="" class="img-carte"></div>
     <div class="container-spot zoom" id="containerSpot">
     </div>`;
@@ -289,9 +166,9 @@ function creationItem(spotItems) {
         }
       </style>`;
   });
-
   listeItems = listeItems.join('');
   containerSpot.innerHTML = listeItems;
+  document.getElementById('spotView').scrollIntoView({ behavior: 'smooth' });
 }
 function eventListeners() {
   btnDroit.addEventListener('click', function () {
