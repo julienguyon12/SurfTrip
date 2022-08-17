@@ -9,6 +9,8 @@ const indo = document.getElementById('indo');
 const btnGauche = document.getElementById('btn-gauche');
 const btnDroit = document.getElementById('btn-droit');
 const sectionSpot = document.getElementById('section-spot');
+const navbar = document.querySelector('.navbar');
+const burger = document.querySelector('.burger');
 var cardSelect = 0;
 var angle = 0;
 var i = 0; //compteur
@@ -170,6 +172,13 @@ function creationItem(spotItems) {
   containerSpot.innerHTML = listeItems;
   document.getElementById('spotView').scrollIntoView({ behavior: 'smooth' });
 }
+//menu burger
+function toggleMenu() {
+  burger.addEventListener('click', () => {
+    navbar.classList.toggle('show-nav');
+  });
+}
+toggleMenu();
 function eventListeners() {
   btnDroit.addEventListener('click', function () {
     ajouterAngle();

@@ -126,6 +126,8 @@ const valiseDetail = [
     img: '../img/valise/accessoire.JPG',
   },
 ];
+const navbar = document.querySelector('.navbar');
+const burger = document.querySelector('.burger');
 var i = 0; //compteur pour recuperation id
 var n = 0; //compteurs eventListeners() pour eviter boucle
 var p = 0;
@@ -383,7 +385,13 @@ function eventListeners() {
     });
   }
 }
-
+//menu burger
+function toggleMenu() {
+  burger.addEventListener('click', () => {
+    navbar.classList.toggle('show-nav');
+  });
+}
+toggleMenu();
 window.addEventListener('DOMContentLoaded', function () {
   eventListeners();
 });

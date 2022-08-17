@@ -24,6 +24,9 @@ const manger = document.getElementById('manger');
 const sortir = document.getElementById('sortir');
 const asideImg = document.getElementById('asideImg');
 const imageGalerie = document.getElementById('imgGalerie');
+const about = document.getElementById('about');
+const navbar = document.querySelector('.navbar');
+const burger = document.querySelector('.burger');
 var longGalerie = spot[letId].imgGalerie.length;
 // initialise le texte a ecrire, chaque item de l'array est une nouvelle ligne
 var aText = new Array(`${spot[letId].title}`, `${spot[letId].pays}_`);
@@ -77,6 +80,9 @@ function afficherSpot() {
   loger.innerHTML = `${spot[letId].loger}`;
   manger.innerHTML = `${spot[letId].manger}`;
   sortir.innerHTML = `${spot[letId].sortir}`;
+  about.innerHTML = `<p><a href="${spot[letId].report}" target="_blank" class="link">Surf Report</a></p>
+        <p><a href="${spot[letId].meteo}" target="_blank" class="link">Météo</a></p>
+        <p><a href="${spot[letId].maps}" target="_blank" class="link">Maps</a></p>`;
   for (let imgg = 0; imgg < longGalerie; imgg++) {
     imageGalerie.innerHTML += `<img src="${spot[letId].imgGalerie[imgg]}" alt="" class="itemimg" >`;
   }
@@ -148,6 +154,13 @@ function creationItemCoeur(spotItems) {
   listeItems = listeItems.join('');
   containerSpot.innerHTML = listeItems;
 }
+//menu burger
+function toggleMenu() {
+  burger.addEventListener('click', () => {
+    navbar.classList.toggle('show-nav');
+  });
+}
+toggleMenu();
 //horizontal scroll
 const slider = document.getElementById('imgGalerie');
 let isDown = false;

@@ -4,26 +4,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surf report Playa colorado</title>
+  <title>Mon p'tit surf trip/ surf guide</title>
   <link rel="stylesheet" href="spot.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5024e0dd88.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <ul class="ul2">
-    <li class="li2"><a class="active" href="../Acceuil/acceuil.html">Accueil</a></li>
-    <li class="li2"><a href="../ListeSpots/listeSpots.html">Liste des spots</a></li>
-    <li class="li2"><a href="#generateur">Générateur de trip</a></li>
-    <li class="li2"><a href="#moi">Qui suis-je?</a></li>
-    <li class="li2"><a href="../valise/valise.html">Dans ma valise</a></li>
-    <li class="li2-1">Mon P'tit Surf Trip</li>
-  </ul>
+  <nav class="navbar dark-mode" role="navigation">
+    <div class="navbar-logo">Mon P'tit Surf Trip</div>
+    <ul class="navbar-links">
+      <li class="navbar-link first"><a href="../Acceuil/acceuil.html">Accueil</a></li>
+      <li class="navbar-link second"><a href="../ListeSpots/listeSpots.html">Liste des spots</a></li>
+      <li class="navbar-link third"><a href="#">Qui suis-je?</a></li>
+      <li class="navbar-link four"><a href="../valise/valise.html">Dans ma valise</a></li>
+    </ul>
+    <button class="burger">
+      <span class="bar"></span>
+    </button>
+  </nav>
   <div class="container">
     <header class="titre-page" id="header">
       <h1>
         <div id="typedtext"></div>
       </h1>
-
     </header>
     <section class="section-carte" id="carte">
       <img src="../img/cartes/nicaragua/colorado/cartecolorado1.png" alt="" class="img1">
@@ -175,7 +179,7 @@
             <h3>L'astuce du baroudeur</h3>
           </header>
           <img src="../img/logos/baroudeur.png" alt="" class="logo2">
-          <p class="p3" id="astuce"></p>
+          <p class="parabaroudeur" id="astuce"></p>
         </section>
         <!-- <div class="pied-report-info">
           <p>Infos pratiques: report | météo</p>
@@ -249,8 +253,28 @@
       </ul>
       <div class="light"></div>
     </aside>
-    <footer class="foot1">
-      <p>pied</p>
+    <footer class="foot">
+      <p class="surf-foot">Mon P'tit Surf Trip</p>
+      <div class="logofoot">
+        <img src="../img/logos/surf.png" alt="" class="logosurf">
+      </div>
+      <div class="about" id="about">
+        <p><a href="#aboutUs" target="_blank" class="link">Surf Report</a></p>
+        <p><a href="#Jobs" target="_blank" class="link">Météo</a></p>
+        <p><a href="#Press" target="_blank" class="link">Maps</a></p>
+      </div>
+      <div class="menu" id="menu">
+        <p><a href="../Acceuil/acceuil.html" class="link">Accueil</a></p>
+        <p><a href="../ListeSpots/listeSpots.html" class="link">Liste des spots</a></p>
+        <p><a href="#Privacy" class="link">Qui suis-je?</a></p>
+        <p><a href="../valise/valise.html" class="link">Dans ma valise</a></p>
+      </div>
+      <div class="icones">
+        <a href="https://www.linkedin.com/in/julien-guyon-9079a0189" target="_blank"><i
+            class="fa-brands fa-linkedin fa-xl logo-social"></i></a>
+        <a href="https://github.com/julienguyon12" target="_blank"><i
+            class="fa-brands fa-github fa-xl logo-social"></i></a>
+      </div>
     </footer>
   </div>
   <script src="data.js"></script>
