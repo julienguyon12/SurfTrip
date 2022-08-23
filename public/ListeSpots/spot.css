@@ -104,92 +104,6 @@ p {
   display: none;
 }
 
-/*  Small device */
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    width: 0;
-    height: calc(100vh - 65px);
-    position: absolute;
-    top: 65px;
-    right: 0;
-    background: var(--navbar-bg-color);
-    transform: translateX(110%);
-    transition: all 0.5s ease-in-out;
-  }
-  .show-nav .navbar-links {
-    width: 100vw;
-    transform: translateX(0);
-  }
-  .navbar-link {
-    transform: translateX(101%);
-    transition: all 0.5s ease-in-out;
-  }
-
-  .show-nav .navbar-link {
-    transform: translateX(0);
-  }
-  .navbar-link a {
-    display: block;
-    padding: 1rem;
-    font-size: 1.6rem;
-    color: var(--navbar-color);
-    transition: all 0.4s ease-in-out;
-  }
-  .navbar-link a:hover {
-    padding-left: 2rem;
-    letter-spacing: 5px;
-  }
-
-  /* Toggle menu */
-  .burger {
-    display: block;
-    position: relative;
-    padding: 0;
-    width: 45px;
-    height: 45px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-  }
-  .bar {
-    display: block;
-    width: 45px;
-    height: 4px;
-    border-radius: 3px;
-    background: var(--navbar-color);
-    transition: all 0.5s ease-in-out;
-  }
-  .bar::before,
-  .bar::after {
-    content: '';
-    width: 45px;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    background: var(--navbar-color);
-    border-radius: 3px;
-    transition: all 0.5s ease-in-out;
-  }
-  .bar::before {
-    transform: translateY(-12px);
-  }
-  .bar::after {
-    transform: translateY(12px);
-  }
-  .show-nav .bar {
-    width: 0;
-    background: transparent;
-  }
-  .show-nav .bar::before {
-    transform: rotate(45deg);
-  }
-  .show-nav .bar::after {
-    transform: rotate(-45deg);
-  }
-}
 /**************** end of navbar *****************/
 .container {
   /* bloc principal */
@@ -349,7 +263,6 @@ p {
 }
 .container-note {
   display: grid;
-  /* min-width: 150px; */
   grid-template-areas:
     'titre4-1 titre4-1'
     'boite4-1 boite4-2';
@@ -419,12 +332,6 @@ p {
   height: auto;
   margin-bottom: 15px;
 }
-/* .p3 {
-  font-size: smaller;
-  text-align: justify;
-  padding: 15px;
-  height: 200px;
-} */
 .section-manger {
   grid-area: boite2-1;
   place-self: center;
@@ -932,6 +839,91 @@ p {
       'boite3-1 boite3-1';
   }
 }
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: var(--navbar-bg-color);
+    transform: translateX(110%);
+    transition: all 0.5s ease-in-out;
+  }
+  .show-nav .navbar-links {
+    width: 100vw;
+    transform: translateX(0);
+  }
+  .navbar-link {
+    transform: translateX(101%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .show-nav .navbar-link {
+    transform: translateX(0);
+  }
+  .navbar-link a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--navbar-color);
+    transition: all 0.4s ease-in-out;
+  }
+  .navbar-link a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
+
+  /* burger menu */
+  .burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--navbar-color);
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before,
+  .bar::after {
+    content: '';
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: var(--navbar-color);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before {
+    transform: translateY(-12px);
+  }
+  .bar::after {
+    transform: translateY(12px);
+  }
+  .show-nav .bar {
+    width: 0;
+    background: transparent;
+  }
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+}
 @media (max-width: 580px) {
   .container-report {
     grid-template-columns: 400px;
@@ -962,5 +954,8 @@ p {
   }
   .logofoot {
     margin-left: 20px;
+  }
+  .logo-social {
+    margin-right: 0rem;
   }
 }

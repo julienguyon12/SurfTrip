@@ -122,16 +122,6 @@ a {
   height: 15px;
   transform: rotate(-45deg);
 }
-@media (max-width: 768px) {
-  .icon-retour {
-    height: 30px;
-    width: 30px;
-  }
-  .arrow {
-    width: 10px;
-    height: 10px;
-  }
-}
 /* section */
 
 /* title */
@@ -200,93 +190,6 @@ a {
 }
 .burger {
   display: none;
-}
-
-/*  Small device */
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    width: 0;
-    height: calc(100vh - 65px);
-    position: absolute;
-    top: 65px;
-    right: 0;
-    background: var(--navbar-bg-color);
-    transform: translateX(110%);
-    transition: all 0.5s ease-in-out;
-  }
-  .show-nav .navbar-links {
-    width: 100vw;
-    transform: translateX(0);
-  }
-  .navbar-link {
-    transform: translateX(101%);
-    transition: all 0.5s ease-in-out;
-  }
-
-  .show-nav .navbar-link {
-    transform: translateX(0);
-  }
-  .navbar-link a {
-    display: block;
-    padding: 1rem;
-    font-size: 1.6rem;
-    color: var(--navbar-color);
-    transition: all 0.4s ease-in-out;
-  }
-  .navbar-link a:hover {
-    padding-left: 2rem;
-    letter-spacing: 5px;
-  }
-
-  /* Toggle menu */
-  .burger {
-    display: block;
-    position: relative;
-    padding: 0;
-    width: 45px;
-    height: 45px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-  }
-  .bar {
-    display: block;
-    width: 45px;
-    height: 4px;
-    border-radius: 3px;
-    background: var(--navbar-color);
-    transition: all 0.5s ease-in-out;
-  }
-  .bar::before,
-  .bar::after {
-    content: '';
-    width: 45px;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    background: var(--navbar-color);
-    border-radius: 3px;
-    transition: all 0.5s ease-in-out;
-  }
-  .bar::before {
-    transform: translateY(-12px);
-  }
-  .bar::after {
-    transform: translateY(12px);
-  }
-  .show-nav .bar {
-    width: 0;
-    background: transparent;
-  }
-  .show-nav .bar::before {
-    transform: rotate(45deg);
-  }
-  .show-nav .bar::after {
-    transform: rotate(-45deg);
-  }
 }
 /**************** end of navbar *****************/
 /*************** Structure site ***************/
@@ -499,9 +402,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  /* border: solid 5px var(--mainbeige); */
   padding: 0px;
-  /* box-shadow: 5px 5px 10px var(--darkGrey); */
   margin-bottom: 10px;
 }
 .container-equipement {
@@ -525,22 +426,100 @@ a {
   -webkit-transform: translate(-200%, 0%);
   transform: translate(-200%, 0%);
 }
-/***** test valise 1 *****/
+/***** start of media *****/
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: var(--navbar-bg-color);
+    transform: translateX(110%);
+    transition: all 0.5s ease-in-out;
+  }
+  .show-nav .navbar-links {
+    width: 100vw;
+    transform: translateX(0);
+  }
+  .navbar-link {
+    transform: translateX(101%);
+    transition: all 0.5s ease-in-out;
+  }
 
-/*************** end of about section ***************/
-/*************** services section ***************/
+  .show-nav .navbar-link {
+    transform: translateX(0);
+  }
+  .navbar-link a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--navbar-color);
+    transition: all 0.4s ease-in-out;
+  }
+  .navbar-link a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
 
-/*************** end of services section ***************/
-/*************** featured tours section ***************/
-
-/*************** end of featured tours section ***************/
-/*************** gallery ***************/
-
-/*************** end of gallery ***************/
-/*************** deals ***************/
-
-/*************** end of deals ***************/
-/*************** footer ***************/
-/************ navbar *****************/
+  /* burger menu */
+  .burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--navbar-color);
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before,
+  .bar::after {
+    content: '';
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: var(--navbar-color);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before {
+    transform: translateY(-12px);
+  }
+  .bar::after {
+    transform: translateY(12px);
+  }
+  .show-nav .bar {
+    width: 0;
+    background: transparent;
+  }
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+  .icon-retour {
+    height: 30px;
+    width: 30px;
+  }
+  .arrow {
+    width: 10px;
+    height: 10px;
+  }
+}
+/***** end of media *****/
 
 /* CSS */
