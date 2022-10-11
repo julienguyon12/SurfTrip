@@ -1,0 +1,518 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* css variables */
+:root {
+  --primaryColor: #3fd0d4;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainbeige: rgb(255, 170, 60, 0.3);
+  --darkbeige: rgb(255, 170, 60, 0.8);
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.25rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+/* body */
+body {
+  font-family: 'Futura', sans-serif;
+  color: var(--mainBlack);
+  background: var(--offWhite);
+  line-height: 1.2;
+  font-size: 1.6rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*************** global styles ***************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+h1 {
+  font-size: 5.3rem;
+}
+
+h2 {
+  font-size: 3.7rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* more global styles */
+
+/* buttons */
+
+/* section */
+
+/* title */
+
+/*************** end of global styles ***************/
+.light-mode {
+  --navbar-color: #222;
+  --navbar-bg-color: #f0f0f0;
+}
+.dark-mode {
+  --navbar-color: #fff;
+  --navbar-bg-color: #000;
+}
+/************* start of navbar *************/
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 2.08rem;
+  font-family: 'Indie Flower', cursive;
+  background: var(--navbar-bg-color);
+  color: var(--navbar-color);
+}
+.navbar-logo {
+  font-family: 'Brush Script MT', 'cursive';
+  font-size: 30px;
+}
+.navbar-links {
+  display: flex;
+}
+.navbar-link {
+  padding: 0 10px;
+}
+.navbar-link a {
+  color: var(--navbar-color);
+  text-decoration: none;
+}
+.navbar-link a:hover {
+  color: var(--darkbeige);
+}
+.burger {
+  display: none;
+}
+
+/*************** fin navbar ***************/
+/*************** header ***************/
+header {
+  min-height: calc(100vh - 13vh);
+}
+h1 span {
+  position: relative;
+}
+.main-pic {
+  display: block;
+  position: relative;
+  width: 25%;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro {
+  position: relative;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--mainbeige);
+  box-shadow: 5px 5px 10px rgb(212, 212, 212);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.intro p {
+  margin-bottom: 0;
+  font-style: oblique;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+/*************** end of header ***************/
+/*************** Structure site ***************/
+
+/*************** fin Structure site ***************/
+
+/*************** Parcours ***************/
+.parcours {
+  background-color: var(--mainbeige);
+  padding: 20px;
+}
+.parcours h2 {
+  grid-area: titre;
+}
+.parcours p {
+  text-align: center;
+  line-height: 1.4;
+}
+.formation-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 'formation img-formation';
+  row-gap: 50px;
+  place-items: center;
+}
+.formation {
+  grid-area: formation;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 2500ms;
+  transform: translateX(-100vw);
+}
+.formation-pic {
+  grid-area: img-formation;
+  width: 60%;
+  border-radius: 40px;
+  transition: 2500ms;
+  transform: translateX(-100vw);
+}
+.pro-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 'img-pro pro';
+  row-gap: 50px;
+  place-items: center;
+}
+.pro {
+  grid-area: pro;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 2500ms;
+  transform: translateX(100vw);
+}
+.pro-pic {
+  grid-area: img-pro;
+  width: 60%;
+  border-radius: 40px;
+  transition: 2500ms;
+  transform: translateX(100vw);
+}
+.loaded .formation-pic,
+.loaded .formation,
+.loaded .pro,
+.loaded .pro-pic {
+  transition: 0;
+  transform: translateX(0);
+}
+/*************** fin de Parcours***************/
+/*************** Voyage section ***************/
+.voyage {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 16.6hv 16.6hv 16.7hv 16.7hv 16.7hv;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  place-items: center;
+  min-height: 100vh;
+}
+.voyage p {
+  text-align: center;
+  line-height: 1.4;
+}
+.titre {
+  grid-area: 1 / 2 / 2 / 4;
+  position: relative;
+}
+.voyage-desc {
+  grid-area: 2 / 2 / 4 / 4;
+  border-radius: 20px;
+  padding: 20px;
+}
+.voyage-pic {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.pola {
+  text-align: center;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  border: solid 12px #fff;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0px rgb(164, 164, 164);
+}
+.child1 {
+  grid-area: 2 / 1 / 3 / 2;
+  position: relative;
+  transition: 1500ms;
+  transform: translateX(-100vw);
+}
+.child2 {
+  grid-area: 4 / 1 / 5 / 2;
+  position: relative;
+  transition: 2000ms;
+  transform: translateY(100vw);
+}
+.child3 {
+  grid-area: 4 / 4 / 5 / 5;
+  position: relative;
+  transition: 3500ms;
+  transform: translateY(100vw);
+}
+.child4 {
+  grid-area: 2 / 4 / 3 / 5;
+  position: relative;
+  transition: 4000ms;
+  transform: translateX(100vw);
+}
+.child5 {
+  grid-area: 4 / 2 / 5 / 3;
+  position: relative;
+  transition: 2500ms;
+  transform: translateY(100vw);
+}
+.child6 {
+  grid-area: 4 / 3 / 5 / 4;
+  position: relative;
+  transition: 3000ms;
+  transform: translateY(100vw);
+}
+.pola p {
+  font-family: 'Brush Script MT', 'cursive';
+  font-size: 20px;
+  margin: -15px 0 0 0;
+}
+.loaded .child1,
+.loaded .child2,
+.loaded .child3,
+.loaded .child4,
+.loaded .child5,
+.loaded .child6 {
+  transition: 0;
+  transform: translateX(0);
+}
+.loaded .child1 {
+  transform: rotate(-15deg);
+}
+.loaded .child2 {
+  transform: rotate(20deg);
+}
+.loaded .child3 {
+  transform: rotate(-35deg);
+}
+.loaded .child4 {
+  transform: rotate(15deg);
+}
+.loaded .child5 {
+  transform: rotate(30deg);
+}
+.loaded .child6 {
+  transform: rotate(-15deg);
+}
+/*************** end of Voyage section ***************/
+/*************** services section ***************/
+
+/*************** end of services section ***************/
+/*************** featured tours section ***************/
+
+/*************** end of featured tours section ***************/
+
+/*************** deals ***************/
+
+/*************** end of deals ***************/
+/*************** footer ***************/
+.foot {
+  grid-area: pied1;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas:
+    'surf menu icones'
+    'i menu icones';
+  background: rgb(255, 170, 60, 0.6);
+  padding: 20px;
+}
+.logofoot {
+  grid-area: i;
+  margin-left: 60px;
+}
+.logosurf {
+  width: 75px;
+  height: auto;
+}
+.surf-foot {
+  grid-area: surf;
+  font-family: 'Brush Script MT', 'cursive';
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.foot a {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+}
+.foot a:hover {
+  color: var(--mainWhite);
+}
+.about {
+  grid-area: about;
+  margin-top: 15px;
+}
+.menu {
+  grid-area: menu;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icones {
+  grid-area: icones;
+  margin-top: 15px;
+}
+.logo-social {
+  width: 5vh;
+  margin-right: 1rem;
+}
+/************ end of footer *****************/
+/************ media *****************/
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: var(--navbar-bg-color);
+    transform: translateX(110%);
+    transition: all 0.5s ease-in-out;
+  }
+  .show-nav .navbar-links {
+    width: 100vw;
+    transform: translateX(0);
+  }
+  .navbar-link {
+    transform: translateX(101%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .show-nav .navbar-link {
+    transform: translateX(0);
+  }
+  .navbar-link a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--navbar-color);
+    transition: all 0.4s ease-in-out;
+  }
+  .navbar-link a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
+
+  /* burger menu */
+  .burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--navbar-color);
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before,
+  .bar::after {
+    content: '';
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: var(--navbar-color);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before {
+    transform: translateY(-12px);
+  }
+  .bar::after {
+    transform: translateY(12px);
+  }
+  .show-nav .bar {
+    width: 0;
+    background: transparent;
+  }
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* p {
+    font-size: 1rem;
+  } */
+  .child1,
+  .child2,
+  .child3,
+  .child4,
+  .child5,
+  .child6 {
+    display: none;
+  }
+}
+/************ end of media *****************/
+/* CSS */

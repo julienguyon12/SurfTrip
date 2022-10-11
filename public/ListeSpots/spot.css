@@ -628,7 +628,6 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-
   background: #fff;
   filter: blur(100px);
   opacity: 0.3;
@@ -926,7 +925,7 @@ p {
 }
 @media (max-width: 580px) {
   .container-report {
-    grid-template-columns: 400px;
+    grid-template-columns: 300px;
     justify-content: center;
     grid-template-areas:
       'titre'
@@ -953,9 +952,27 @@ p {
     height: 250px;
   }
   .logofoot {
-    margin-left: 20px;
+    display: none;
   }
   .logo-social {
     margin-right: 0rem;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .surf-foot {
+    font-size: 20px;
+  }
+  .asidegauche {
+    width: 100%;
+    grid-area: lateral1;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-areas:
+      'aside1Principal1'
+      'aside1Principal4'
+      'aside1Principal2'
+      'aside1Principal3';
+    justify-content: space-evenly;
   }
 }
