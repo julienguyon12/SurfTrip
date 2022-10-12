@@ -134,7 +134,6 @@ var i = 0; //compteur pour recuperation id
 var n = 0; //compteurs eventListeners() pour eviter boucle
 var p = 0;
 window.addEventListener('load', () => {
-  console.log(accroche);
   accroche.classList.add('loaded');
   accroche2.classList.add('loaded');
 });
@@ -273,7 +272,6 @@ function creerValiseInterieurDetail() {
   }
 }
 function translaterGlobale200() {
-  console.log(p);
   var valiseGlobale = document.getElementById('container-valise-globale');
   var sectionValise = document.getElementById('container-valise-interieur');
   var sectionValiseDetail = document.getElementById('boite-valise-detail');
