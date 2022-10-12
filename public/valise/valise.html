@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <title>Dans ma valise</title>
   <link rel="stylesheet" href="valise.css" />
+  <script src="https://kit.fontawesome.com/5024e0dd88.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
       <ul class="navbar-links">
         <li class="navbar-link first"><a href="../Acceuil/acceuil.html">Accueil</a></li>
         <li class="navbar-link second"><a href="../ListeSpots/listeSpots.html">Liste des spots</a></li>
-        <li class="navbar-link third"><a href="#">Qui suis-je?</a></li>
+        <li class="navbar-link third"><a href="../moi/auteur.html">Qui suis-je?</a></li>
         <li class="navbar-link four"><a href="../valise/valise.html">Dans ma valise</a></li>
       </ul>
       <button class="burger">
@@ -23,14 +24,14 @@
     </nav>
     <section class="section-accroche">
       <img src="../img/moi/julien2.JPG" class="image-accroche" alt="" />
-      <div class="block-accroche">
+      <div class="block-accroche" id="accroche">
         <h2 class="titre-accroche">
           <span>"</span>Voyagez Léger <br />
           et Surtout <br />Sentez vous Libre<span>"</span>
         </h2>
         <p class="sous-titre-accroche">Charles Hotnoze 2012</p>
       </div>
-      <div class="block-accroche2"></div>
+      <div class="block-accroche2" id="accroche2"></div>
     </section>
     <section class="section-valise" id="section-valise">
       <div class="container-valise-globale" id="container-valise-globale">
@@ -44,6 +45,24 @@
       </div>
     </section>
   </div>
+  <footer class="foot">
+    <p class="surf-foot">Mon P'tit Surf Trip</p>
+    <div class="logofoot">
+      <img src="../img/logos/surf.png" alt="" class="logosurf">
+    </div>
+    <div class="menu" id="menu">
+      <p><a href="../Acceuil/acceuil.html" class="link">Accueil</a></p>
+      <p><a href="../ListeSpots/listeSpots.html" class="link">Liste des spots</a></p>
+      <p><a href="../moi/auteur.html" class="link">Qui suis-je?</a></p>
+      <p><a href="../valise/valise.html" class="link">Dans ma valise</a></p>
+    </div>
+    <div class="icones">
+      <a href="https://www.linkedin.com/in/julien-guyon-9079a0189" target="_blank"><i
+          class="fa-brands fa-linkedin fa-xl logo-social"></i></a>
+      <a href="https://github.com/julienguyon12" target="_blank"><i
+          class="fa-brands fa-github fa-xl logo-social"></i></a>
+    </div>
+  </footer>
   <script src="valise.js"></script>
 </body>
 

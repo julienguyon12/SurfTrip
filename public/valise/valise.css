@@ -234,16 +234,12 @@ a {
   -webkit-transition: 0.75s;
   transform: translate(100%, 0%);
   transition: 0.75s;
+
   width: 100%;
   height: calc(100vh);
   background: var(--mainbeige);
 }
-
-.section-accroche:hover .block-accroche {
-  -webkit-transform: translate(0%, 0%);
-  transform: translate(0%, 0%);
-}
-.section-accroche:hover .block-accroche2 {
+.loaded {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
 }
@@ -294,7 +290,7 @@ a {
 .container-image-ouvrir-valise {
   position: relative;
   color: rgb(255, 255, 255);
-  width: 20vw;
+  width: 50vh;
   height: fit-content;
 }
 .image-valise-globale {
@@ -338,6 +334,7 @@ a {
   grid-area: btn;
   height: 100%;
   width: 40px;
+  margin-right: 60px;
 }
 .container-valise-image {
   grid-area: section;
@@ -426,7 +423,78 @@ a {
   -webkit-transform: translate(-200%, 0%);
   transform: translate(-200%, 0%);
 }
+/************* footer **********/
+.foot1 {
+  grid-area: pied1;
+  border: dotted 2px rgb(209, 65, 65);
+}
+.foot {
+  grid-area: pied1;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  grid-template-areas:
+    'surf menu icones'
+    'i menu icones';
+  background: rgb(255, 170, 60, 0.6);
+  padding: 20px;
+}
+.logofoot {
+  grid-area: i;
+  margin-left: 60px;
+}
+.logosurf {
+  width: 75px;
+  height: auto;
+}
+.surf-foot {
+  grid-area: surf;
+  font-family: 'Brush Script MT', 'cursive';
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.foot a {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+}
+.foot a:hover {
+  color: var(--mainWhite);
+}
+.about {
+  grid-area: about;
+  margin-top: 15px;
+}
+.menu {
+  grid-area: menu;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icones {
+  grid-area: icones;
+  margin-top: 15px;
+}
+.logo-social {
+  width: 5vh;
+  margin-right: 1rem;
+}
+/*********** end of footer ************/
 /***** start of media *****/
+@media screen and (max-width: 1150px) {
+  h5 {
+    font-size: 1rem;
+  }
+  .contenu-valise {
+    width: 50%;
+  }
+  .container-liste-equipement {
+    font-size: small;
+  }
+  .container-conseil p {
+    font-size: small;
+  }
+}
 @media screen and (max-width: 768px) {
   .navbar-links {
     overflow: hidden;
@@ -519,7 +587,14 @@ a {
     width: 10px;
     height: 10px;
   }
+  .contenu-valise {
+    width: 60%;
+  }
+  .image-valise-detail {
+    display: none;
+  }
 }
+
 /***** end of media *****/
 
 /* CSS */

@@ -366,7 +366,7 @@ h1 span {
 .foot {
   grid-area: pied1;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 30% 50% 20%;
   grid-template-areas:
     'surf menu icones'
     'i menu icones';
@@ -500,6 +500,31 @@ h1 span {
   .show-nav .bar::after {
     transform: rotate(-45deg);
   }
+  .logosurf {
+    display: none;
+  }
+  .formation-section {
+    grid-template-columns: 100%;
+    grid-template-areas: 'formation';
+  }
+  .formation {
+    grid-area: formation;
+    width: 80%;
+  }
+  .formation-pic {
+    display: none;
+  }
+  .pro-section {
+    grid-template-columns: 100%;
+    grid-template-areas: 'pro';
+  }
+  .pro {
+    grid-area: pro;
+    width: 80%;
+  }
+  .pro-pic {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px) {
   /* p {
@@ -512,6 +537,11 @@ h1 span {
   .child5,
   .child6 {
     display: none;
+  }
+  .voyage-desc {
+    grid-area: 1 / 1 / 6 / 6;
+    border-radius: 20px;
+    padding: 20px;
   }
 }
 /************ end of media *****************/

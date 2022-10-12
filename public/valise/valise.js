@@ -128,9 +128,16 @@ const valiseDetail = [
 ];
 const navbar = document.querySelector('.navbar');
 const burger = document.querySelector('.burger');
+const accroche = document.getElementById('accroche');
+const accroche2 = document.getElementById('accroche2');
 var i = 0; //compteur pour recuperation id
 var n = 0; //compteurs eventListeners() pour eviter boucle
 var p = 0;
+window.addEventListener('load', () => {
+  console.log(accroche);
+  accroche.classList.add('loaded');
+  accroche2.classList.add('loaded');
+});
 function creerValiseInterieur() {
   var sectionValise = document.getElementById('section-valise');
   const retourValise = document.getElementById('btn-retour');
