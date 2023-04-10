@@ -17,7 +17,9 @@ const valiseDetail = [
     item13: ``,
     item14: ``,
     item15: ``,
-    pconseil: `Le plus important en faisant son sac c'est de ne pas trop se charger. Si le sac est trop lourd les déplacements seront pénibles et vous serez déjà assez chargé avec l'équipement surf. Si il vous manque quelque chose vous pourrez toujours acheter sur place et ramener des souvenirs. `,
+    pconseil: `Lors de la constitution de son sac de voyage , le plus important est de
+prendre l’essentiel pour l’alléger le plus possible. Si le sac est trop lourd, les déplacements
+deviendront pénibles car l'équipement surf est déjà en soi assez encombrant et lourd. S’il vous manque quelque chose, vous pourrez toujours acheter sur place et ramener des souvenirs. `,
     img: '../img/valise/vetement.JPG',
   },
   {
@@ -25,7 +27,7 @@ const valiseDetail = [
     title: `Mon sac`,
     item1: `Sac Forclaz 70L + 1 sac 20L`,
     item2: `1 sac à dos de ville`,
-    item3: `Saccoche de protection d'ordinateur `,
+    item3: `Sacoche de protection d'ordinateur `,
     item4: ``,
     item5: ``,
     item6: ``,
@@ -38,7 +40,10 @@ const valiseDetail = [
     item13: ``,
     item14: ``,
     item15: ``,
-    pconseil: `Il est important d'avoir un bon sac avec beaucoup de rangements. En effet la plupart du temps dans les dortoirs vous ne pourrez pas vous éparpiller. Il est donc important d'avoir un sac pratique. J'ai choisi un grand sac de 70L afin de pouvoir faire mon sac rapidement sans toujours rouler mes vêtements et pour ramener des souvenirs. `,
+    pconseil: `Il est important d'avoir un bon sac possédant beaucoup de rangements. En effet, la plupart
+du temps dans les dortoirs, vous ne pourrez pas vous éparpiller. Il est donc important
+d'avoir un sac pratique. J'ai choisi un d’une capacité de 70L afin de pouvoir l’organiser
+rapidement sans toujours rouler mes vêtements et pour pouvoir ramener des souvenirs. `,
     img: '../img/valise/sac.JPG',
   },
   {
@@ -95,7 +100,7 @@ const valiseDetail = [
     item7: `Fibre de verre`,
     item8: `Squeegee`,
     item9: `Leash`,
-    item10: `Derrives`,
+    item10: `Dérives`,
     item11: `Pochette type surf system`,
     item12: ``,
     item13: ``,
