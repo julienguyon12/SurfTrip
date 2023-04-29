@@ -2,7 +2,7 @@
 
 MonPetitSurfTrip is a blog repertoring all the surf spot along my 2 years travel. It contain all the infos you need to have a good surf trip from the report of the wave to the nearest accomodation.
 
-![MonPetitSurfTrip's interface](img/screen/acceuil.png)
+![MonPetitSurfTrip's interface](public/img/screen/acceuil.png)
 
 ## Main features
 
