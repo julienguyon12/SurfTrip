@@ -6,7 +6,7 @@
     "javascript": "javascriptreact"
   },
   "explorer.compactFolders": false,
-  "spellright.language": ["fr"],
+  "spellright.language": ["en"],
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
